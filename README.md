@@ -29,4 +29,4 @@ Log into the port number 3000 or whatever port number you have set as your envir
 
 ### Dependencies
 + You need to have NodeJS installed in your system.
-+ Provide your own MongoDB URI and Google credentials.
++ Provide your own MongoDB URI and Google credentials in the 'config.env' file under the config folder.
