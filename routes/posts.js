@@ -79,7 +79,6 @@ route.get('/edit/:id', ensureAuth, ensureOwner, async (req, res) => {
         console.error(error)
         res.render('errors/error')
     }
-    res.render('posts/add')
 })
 
 //DESC Edit post
