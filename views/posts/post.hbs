@@ -1,0 +1,53 @@
+<div class="row">
+    <div class="col s12 m8">
+        <h3>{{data.title}}</h3>
+        <h5>{{formatDate date 'MMMM Do YYYY'}}</h5>
+        <br>
+        <div class="card data">
+            <div class="card-content">
+                {{{data.body}}}
+            </div>
+        </div>
+        {{#each data2}}
+        <div class="row">
+            <img src="{{this.user.image}}" class="circle responsive-img img-comm col s1">
+            <div class="card data col s10">
+            <h6>{{this.user.displayName}}</h6>
+                <div class="card-content">
+                    {{{this.body}}}
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    <div class="col s12 m4">
+        <br><br>
+        <div class="card center-align">
+            <div class="card-content">
+                <span class="card-title"><strong>{{data.user.displayName}}</strong></span>
+                <img src="{{data.user.image}}" class="circle responsive-img">
+            </div>
+            <div class="card-action">
+                <div class="orange-text">AUTHOR</div>
+            </div>
+        </div>
+        <div class="section center-align">
+            <div class="row">
+                <form action="" method="POST" class="col s12">
+                    <div class="row">
+                        <div class="input-field">
+                            <textarea id="body" name="body" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <button type="submit" class="btn teal lighten-1">
+                            <i class="fas fa-comment left"></i>
+                            Add comment
+                        </button> 
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

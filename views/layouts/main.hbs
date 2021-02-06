@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Third Party Dependencies-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+    <!-- First Party Dependencies-->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Helewcial</title>
+</head>
+<body>
+    {{> _header}}
+    {{> _addbtn}}
+    <div class="container">
+        {{{body}}} 
+    </div>
+    
+    <!-- Third Party Dependencies-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.ckeditor.com/4.16.0/basic/ckeditor.js"></script>
+
+    <!-- First Party Dependencies-->
+    <script>
+        M.Sidenav.init(document.querySelector('.sidenav'))
+        CKEDITOR.replace('body')
+    </script>
+
+</body>
+</html>

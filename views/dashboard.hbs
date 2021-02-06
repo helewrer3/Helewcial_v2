@@ -1,0 +1,28 @@
+<h3>Welcome {{name}}</h3>
+<h6>Here are your posts</h6>
+<table class="highlight centered">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each posts}}
+            <tr>
+                <td><a href="/posts/show/{{_id}}">{{title}}</a></td>
+                <td>{{formatDate createdAt 'MMMM Do YYYY'}}</td>
+                <td>
+                    <a href="/posts/edit/{{_id}}" class="btn blue lighten-1">
+                        <i class="fas fa-edit fa-small right"></i>
+                        Edit
+                    </a>
+                    <a href="/posts/del/{{_id}}" class="btn orange lighten-1">
+                        <i class="fas fa-trash fa-small right"></i>
+                        Delete
+                    </a>
+                </td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>

@@ -1,0 +1,23 @@
+<h3>Add Post</h3>
+<div class="row">
+    <form action="/posts/add" method="POST" class="col s12">
+        <div class="row">
+            <div class="input-field">
+                <input type="text" id="title" name="title" required>
+                <label for="title">Title</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field">
+                <h5>Type Your Post:</h5>
+                <textarea id="body" name="body" required></textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <input type="submit" value="Save" class="btn teal-lighten-4">
+            <a href="/dashboard" class="btn orange">Cancel</a>
+        </div>
+    </form>
+</div>
