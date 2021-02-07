@@ -4,6 +4,8 @@ A new and improved version of [Helewcial](https://github.com/helewrer3/Social-Me
 ## Technologies Used
 + NodeJS
 + Express
++ Session
++ CKEditor
 + Moment
 + Passport
 + OAuth 2.0
